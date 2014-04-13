@@ -1,0 +1,133 @@
+body {
+	margin: 2em;
+	font-size: 10pt;
+}
+
+h1 {
+	font-size: 140%;
+	text-transform: capitalize;
+}
+
+h2 {
+	font-size: 130%;
+}
+
+h3 {
+	font-size: 120%;
+}
+
+h1, h2, h3{
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin: 0.5em 0 0.5em 0
+}
+
+a {
+	color: #cc6633;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #ffAA33;
+}
+
+section {
+	margin-bottom: 2em; 
+}
+
+/*Descriptions*/
+dl dt, dl dt a {
+	font-weight: bold;
+}
+
+dl dd {
+	display: block;
+	margin: 0;
+	margin-bottom: 0.5em;
+}
+dl dt:after {
+	content: ":";
+}
+
+#personal dl dt {
+	display: inline;
+	margin-right: 0.5em;
+	text-transform: capitalize;
+}
+
+#personal dl {
+	display: inline;
+}
+
+#work ul, #know > ul, #personal > ul {
+	padding: 0;
+	margin: 0;
+}
+
+#work > ul > li, #know > ul > li, #personal > ul > li {
+	vertical-align: top;
+	display: inline-block;
+	margin: 1em 1em 1em 0em;
+}
+
+#work p, #work h2, #work h3 {
+	text-align: left;
+}
+
+#work span {
+	font-weight: bold;
+}
+
+#work > ul > li {
+	width: 30%;
+}
+
+#know > ul > li {
+	width: 18%;
+}
+
+#know > ul > li > ul, #hate > ul, #personal > ul > li > ul {
+	padding-left: 1.5em;
+	list-style-type: square;
+}
+
+@media only screen and (max-width: 40em) {
+	#work > ul > li {
+		width: 100%;
+	}
+
+	#know > ul > li {
+		width: 100%;
+	}
+
+	#work > ul > li, #know > ul > li{
+		display: block;
+		padding: 0em;
+	}
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+	#work > ul > li {
+		width: 45%;
+	}
+
+	#know > ul > li {
+		width: 25%;
+	}
+}
+
+/*Hashtags*/
+ul.tags {
+	font-size: 10pt;
+	padding: 0;
+	color: #b1b1b1;
+}
+ul.tags > li {
+	display: inline;
+}
+ul.tags > li:before {
+	content: "#";
+}
