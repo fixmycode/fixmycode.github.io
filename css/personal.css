@@ -1,5 +1,4 @@
 body {
-	margin: 2em;
 	font-size: 10pt;
 }
 
@@ -35,7 +34,7 @@ a:hover {
 }
 
 section {
-	margin-bottom: 2em; 
+	margin: 0 2em 2em 2em;
 }
 
 /*Descriptions*/
@@ -52,14 +51,34 @@ dl dt:after {
 	content: ":";
 }
 
+/*Personal*/
 #personal dl dt {
 	display: inline;
 	margin-right: 0.5em;
 	text-transform: capitalize;
 }
 
-#personal dl {
-	display: inline;
+#personal {
+	margin: 2em;
+}
+
+#personal li {
+	margin-bottom: 0;
+}
+
+#photo img {
+	width: 7em;
+	border-radius: 100%;
+	border: 0.15em solid white;
+	box-shadow: 0em 0.2em 0.2em #ccc;
+}
+
+#photo {
+	float:left;
+}
+
+#personal .inline-dt {
+	display: inline-block;
 }
 
 #work ul, #know > ul, #personal > ul {
@@ -106,6 +125,22 @@ dl dt:after {
 	#work > ul > li, #know > ul > li{
 		display: block;
 		padding: 0em;
+	}
+
+	#photo img {
+		width: 100%;
+		border: none;
+		box-shadow: none;
+		border-radius: 0%;
+		margin-top: -30%;
+		margin-bottom: -50%;
+	}
+
+	#photo {
+		margin: 0;
+		height: 10%;
+		float: none;
+		overflow: hidden;
 	}
 }
 
