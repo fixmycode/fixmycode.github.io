@@ -183,3 +183,11 @@ ul.tags > li {
 ul.tags > li:before {
 	content: "#";
 }
+
+/*Footer*/
+footer {
+	font-family: monospace;
+	font-size: 70%;
+	color: rgba(0,0,0,0.7);
+	text-align: center;
+}
