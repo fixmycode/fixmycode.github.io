@@ -1,17 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Signika:600,400,200);
+
 body {
-	font-size: 10pt;
+	font-family: 'Signika', sans-serif;
+	font-size: 12pt;
+	background: #B7BFCC;
 }
 
 h1 {
 	font-size: 140%;
+	color: #244E99;
 	text-transform: capitalize;
 }
 
 h2 {
 	font-size: 130%;
+	color: #244E99;
 }
 
 h3 {
+	font-weight: 600;
 	font-size: 120%;
 }
 
@@ -21,16 +28,17 @@ h1, h2, h3{
 }
 
 p {
+	font-weight: 200;
 	margin: 0.5em 0 0.5em 0
 }
 
 a {
-	color: #cc6633;
+	color: #3277CC;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #ffAA33;
+	color: #FFF;
 }
 
 section {
@@ -70,7 +78,7 @@ dl dt:after {
 	width: 7em;
 	border-radius: 100%;
 	border: 0.15em solid white;
-	box-shadow: 0em 0.2em 0.2em #ccc;
+	box-shadow: 0em 0.2em 0.2em rgba(0,0,0,0.5);
 }
 
 #photo {
@@ -81,23 +89,23 @@ dl dt:after {
 	display: inline-block;
 }
 
-#work ul, #know > ul, #personal > ul {
+#work ul, #know > ul, #love ul, #personal > ul {
 	padding: 0;
 	margin: 0;
 }
 
-#work > ul > li, #know > ul > li, #personal > ul > li {
+#work > ul > li, #know > ul > li, #love > ul > li, #personal > ul > li {
 	vertical-align: top;
 	display: inline-block;
 	margin: 1em 1em 1em 0em;
 }
 
-#work p, #work h2, #work h3 {
+#work p, #work h2, #work h3, #love h3, #love p {
 	text-align: left;
 }
 
 #work span {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 #work > ul > li {
@@ -108,21 +116,25 @@ dl dt:after {
 	width: 18%;
 }
 
+#love > ul > li {
+	width: 22%;
+}
+
 #know > ul > li > ul, #hate > ul, #personal > ul > li > ul {
 	padding-left: 1.5em;
 	list-style-type: square;
 }
 
 @media only screen and (max-width: 40em) {
-	#work > ul > li {
+	body{
+		font-size: 10pt;
+	}
+
+	#work > ul > li, #know > ul > li, #love > ul > li {
 		width: 100%;
 	}
 
-	#know > ul > li {
-		width: 100%;
-	}
-
-	#work > ul > li, #know > ul > li{
+	#work > ul > li, #know > ul > li, #love > ul > li {
 		display: block;
 		padding: 0em;
 	}
@@ -149,6 +161,10 @@ dl dt:after {
 		width: 45%;
 	}
 
+	#love > ul > li {
+		width: 30%;
+	}
+
 	#know > ul > li {
 		width: 25%;
 	}
@@ -156,9 +172,10 @@ dl dt:after {
 
 /*Hashtags*/
 ul.tags {
+	font-weight: 200;
 	font-size: 10pt;
 	padding: 0;
-	color: #b1b1b1;
+	color: rgba(0,0,0,0.5);
 }
 ul.tags > li {
 	display: inline;
